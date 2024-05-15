@@ -42,7 +42,7 @@ Anyone can make any number of identifiers and build their identity around that i
 
 ### Marketplace
 
-Within each community there are marketplaces that allows users to post their offers for sale of goods and services.
+Within each community there are marketplaces that allows users to post their offers for sale of goods and services. Purchase of digital assets, such as tickets, can be saved into the users personal data storage (DWN) for safe-keeping.
 
 ### Registries
 
@@ -51,6 +51,18 @@ Anyone can provide "Registry as a Service" within a community, which are curated
 ### Verification
 
 Anyone can provide "Verification as a Service" within a community, which is a provider that verifies the authenticity of data (verifiable credentials) or identities (DID). These veriication services can issue identity cards to users based upon a set of rules the verification provider decides.
+
+### Data
+
+Anyone can provide "Data as a Serviced" within a community, which can be any type of data, but one specific data provider would be approved lists of content for children.
+
+A data provider could have different curated lists of approved content, that are tagged with metadata and age-related tagging, allowing parents to subscribe (free or paid service) to data providers and utilize those data lists in apps for children.
+
+Other examples on data, could be a curated list of anarchy communities, or network states, or free cities.
+
+### Reputation
+
+Reputations are important in the digital world, as a means to filter out noise and problematic actors. Within a community on Ariton, individuals will build up reputations connected to their identifiers.
 
 ## Funding
 
