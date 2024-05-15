@@ -46,7 +46,7 @@ Within each community there are marketplaces that allows users to post their off
 
 ### Registries
 
-Anyone can provide "Registry as a Service" within a community, which are curated lists of data. Examples for this are Land Registry.
+Anyone can provide "Registry as a Service" within a community, which are curated lists of data. Examples for this are Land Registry and Business Registry.
 
 ### Verification
 
