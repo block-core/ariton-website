@@ -14,7 +14,7 @@ Ariton makes the participants in the communities, owner of their own digital dat
 
 ## Inspiration
 
-The Bitcoin whitepaper references (http://www.weidai.com/bmoney.txt)[b-money.txt] written by Wei Dai, which contains the following phrase:
+The Bitcoin whitepaper references [b-money.txt](http://www.weidai.com/bmoney.txt) written by Wei Dai, which contains the following phrase:
 
 ```I am fascinated by Tim May's crypto-anarchy. Unlike the communities
 traditionally associated with the word "anarchy", in a crypto-anarchy the
