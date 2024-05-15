@@ -8,7 +8,7 @@ While Bitcoin gave us sound money, a human society needs so much more. Ariton is
 
 These communities will bring together people, allowing a more free expression and digital lifestyle that is traditionally prohibited on the Internet today.
 
-Ariton is decentralized in such a manner that makes it hardware to be stopped, and is easy for the general audience to contribute with strengthening the network as a whole.
+Ariton is decentralized in such a manner that makes it hard to be stopped, and is easy for the general audience to contribute with strengthening the network as a whole.
 
 Ariton makes the participants in the communities, owner of their own digital data and online presence. Instead of your personal data being used to monetize you, you own and control your own data and how it is shared with others.
 
