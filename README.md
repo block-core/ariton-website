@@ -34,6 +34,24 @@ Anyone who want to establish a community that involves around ownership of data 
 
 Ariton builds on [decentralized identifiers](https://developer.tbd.website/docs/web5/learn/decentralized-identifiers) (DID), [verifiable credentials](https://developer.tbd.website/docs/web5/learn/verifiable-credentials) (VC), [decentralized web nodes](https://developer.tbd.website/docs/web5/learn/decentralized-web-nodes/) (DWN) by [TBD](https://www.tbd.website/), [Codex](https://blog.codex.storage/decentralised-storage-for-virtual-self-sovereign-territories/) by [Institute of Free Technology](https://free.technology/) (under consideration, might be too dependent on blockchain), [Fedimint](https://fedimint.org/) (Bitcoin federation for privacy and community trading), [Nostr](https://nostr.com/) (communication relay protocol and technology).
 
+## Features
+
+### Identity
+
+Anyone can make any number of identifiers and build their identity around that identifier. Users can self-determine what metadata they want to share connected to their identifier, such as name and profile image. Ariton supports multiple identity providers that builds on the open standard for decentralized identifiers (DID).
+
+### Marketplace
+
+Within each community there are marketplaces that allows users to post their offers for sale of goods and services.
+
+### Registries
+
+Anyone can provide "Registry as a Service" within a community, which are curated lists of data. Examples for this are Land Registry.
+
+### Verification
+
+Anyone can provide "Verification as a Service" within a community, which is a provider that verifies the authenticity of data (verifiable credentials) or identities (DID). These veriication services can issue identity cards to users based upon a set of rules the verification provider decides.
+
 ## Funding
 
 Ariton is seeking investements and funding to continue the development of the new superapp. Behind the project is individuals who have a track record of delivering, wealth of knowledge and experience.
