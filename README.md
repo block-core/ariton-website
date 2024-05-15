@@ -31,7 +31,7 @@ Anyone who want to establish a community that involves around ownership of data 
 
 ## Technologies and Protocols
 
-Ariton builds on decentralized identifiers (DID), verifiable credentials (VC), decentralized web nodes (DWN), Fedimint (Bitcoin federation for privacy and community trading), Nostr (communication relay protocol and technology).
+Ariton builds on [decentralized identifiers](https://developer.tbd.website/docs/web5/learn/decentralized-identifiers) (DID), [verifiable credentials](https://developer.tbd.website/docs/web5/learn/verifiable-credentials) (VC), [decentralized web nodes](https://developer.tbd.website/docs/web5/learn/decentralized-web-nodes/) (DWN), [Fedimint](https://fedimint.org/) (Bitcoin federation for privacy and community trading), [Nostr](https://nostr.com/) (communication relay protocol and technology).
 
 ## Funding
 
