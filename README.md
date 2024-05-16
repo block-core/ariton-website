@@ -22,6 +22,8 @@ Without the advances in open standards on decentralized identifiers, Ariton woul
 | ------------- | ------------- |
 | ![Sondre Bjellås](assets/sondre.png) | **Sondre Bjellås** (Chief Product Engineer) - With more than three decades of experience with software development, he has extensive experience with technology, languages, patterns and practices, both in building large scalable systems, web apps and decentralized software. His relentless focus on rapid release cycles allows Ariton to develop and adopt to its users and market without delays.  |
 | ![Dan Gershony](assets/dan.png) | **Dan Gershony** (Chief Technology Officer) - With experience from blockchains and former CTO role in a large British player in the blockchain space, Dan brings insight and capabilities to the Ariton team that will ensure success and quality of delivery.|
+| ![Milad Raeisi](assets/milad.png) | **DMilad Raeisi** (Software Engineer) - He is a seasoned Software Architect and Programmer with over 20 years of experience. As a Senior Developer, he specializes in software development, UI/UX design, data science, AI, and blockchain. His expertise in building large-scale systems and decentralized applications drives innovation and quality at Ariton.|
+
 
 ## Features
 
