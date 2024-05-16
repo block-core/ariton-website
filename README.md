@@ -10,6 +10,14 @@ Ariton is decentralized in such a manner that makes it hard to be stopped, and i
 
 Ariton makes the participants in the communities, owner of their own digital data and online presence. Instead of your personal data being used to monetize you, you own and control your own data and how it is shared with others.
 
+## Communities
+
+Ariton revolves around communities. You can create and join communities of many kinds, for example "The Knitting Group", which could have instructors, educators, hints and tips, buy and sell and more within the community.
+
+A community has no boundries, but can be local and regional, or global and universal.
+
+Community owners can earn income from their communities. As a community grows and the quality of content and contributors within it is able to sell their goods and services, the community owners can decide if they want to have a community fee added to various features within the community. This is a way for community manager to reap some rewards from curating a great community.
+
 ## Who wants to use Ariton?
 
 Anyone who want to establish a community that involves around ownership of data and commercial trade within their communities.
