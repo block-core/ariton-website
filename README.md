@@ -14,6 +14,10 @@ Ariton makes the participants in the communities, owner of their own digital dat
 
 Anyone who want to establish a community that involves around ownership of data and commercial trade within their communities.
 
+## How to think about Ariton?
+
+Think of Ariton as a digitalization of your local (and global) communities. Where you communicate privately with your friends and community, without any third parties listening on your conversations. How you can exchange goods and services with your friends and community, without third parties being involved. This is Ariton.
+
 ## Who will build Ariton?
 
 Without the advances in open standards on decentralized identifiers, Ariton wouldn't be possible. Launching Ariton comes at the exact time when foundations are laid to develop such an superapp.
