@@ -1,8 +1,25 @@
-# Ariton - Join the new economy of the future.
+# Ariton - The SuperApp for Communities
+
+Discover, create, and join communities that match your interests and passions.
+
+Ariton is a (future) superapp that lets you create and join communities of any kind, 
+based on your hobbies, ideas, philosophy, faith or anything else. 
+
+Built on free and open standards, Ariton gives you the power and ownership of 
+your own identities and data.
+
+Ariton brings your real life communities into the digital world, by giving you 
+access to a rich set of features that covers the needs to run complete communities.
+
+Ariton is not just another app that collects your data, but a tool to help grow 
+your communities and adopt decentralized technologies that empowers the community, 
+and its users.
+
+## Economy of Communities
 
 Ariton is a re-envisioning of the economy for human societies that builds on a new foundation of modern solutions that helps elevate the participants into a better tomorrow.
 
-While Bitcoin gave us sound money, a human society needs so much more. Ariton is a (planned) superapp that integrates the latest in decentralized technologies and protocols, allowing anyone to launch their own communities, privately or publicly.
+While Bitcoin gave us sound money, a human society needs so much more. Ariton is a (future) superapp that integrates the latest in decentralized technologies and protocols, allowing anyone to launch their own communities, privately or publicly.
 
 These communities will bring together people, allowing a more free expression and digital lifestyle that is traditionally prohibited on the Internet today.
 
@@ -31,7 +48,7 @@ Think of Ariton as a digitalization of your local (and global) communities. Wher
 Without the advances in open standards on decentralized identifiers, Ariton wouldn't be possible. Launching Ariton comes at the exact time when foundations are laid to develop such an superapp.
 
 |   | About us |
-| ------------- | ------------- |
+| --- | --- |
 | ![Sondre Bjellås](assets/sondre.png) | **Sondre Bjellås** (Chief Product Engineer) - With more than three decades of experience with software development, he has extensive experience with technology, languages, patterns and practices, both in building large scalable systems, web apps and decentralized software. His relentless focus on rapid release cycles allows Ariton to develop and adopt to its users and market without delays.  |
 | ![Dan Gershony](assets/dan.png) | **Dan Gershony** (Chief Technology Officer) - With experience from blockchains and former CTO role in a large British player in the blockchain space, Dan brings insight and capabilities to the Ariton team that will ensure success and quality of delivery.|
 | ![Milad Raeisi](assets/milad.png) | **Milad Raeisi** (Software Engineer) - He is a seasoned Software Architect and Programmer with over 20 years of experience. As a Senior Developer, he specializes in software development, UI/UX design, data science, AI, and blockchain. His expertise in building large-scale systems and decentralized applications drives innovation and quality at Ariton.|
@@ -76,14 +93,13 @@ Ariton builds on [decentralized identifiers](https://developer.tbd.website/docs/
 The Bitcoin whitepaper references [b-money.txt](http://www.weidai.com/bmoney.txt) written by Wei Dai, which contains the following phrase:
 
 ```txt
-I am fascinated by Tim May's crypto-anarchy. Unlike the communities
-traditionally associated with the word "anarchy", in a crypto-anarchy the
-government is not temporarily destroyed but permanently forbidden and
-permanently unnecessary. It's a community where the threat of violence is
+It's a community where the threat of violence is
 impotent because violence is impossible, and violence is impossible
 because its participants cannot be linked to their true names or physical
 locations.
 ```
+
+Your Ariton identities is your own, it is not linked or connected to your existing birthname or identity used in real life. You can be yourself, how you want to be.
 
 ## Funding
 
