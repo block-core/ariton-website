@@ -76,7 +76,7 @@ Anyone can provide "Verification as a Service" within a community, which is a pr
 
 ### Data
 
-Anyone can provide "Data as a Serviced" within a community, which can be any type of data, but one specific data provider would be approved lists of content for children.
+Anyone can provide "Data as a Service" within a community, which can be any type of data, but one specific data provider would be approved lists of content for children.
 
 A data provider could have different curated lists of approved content, that are tagged with metadata and age-related tagging, allowing parents to subscribe (free or paid service) to data providers and utilize those data lists in apps for children.
 

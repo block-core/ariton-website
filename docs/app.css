@@ -59,14 +59,32 @@ body {
   padding-top: 8em;
 }
 
+.profile-image {
+  min-width: 64px;
+  width: 100%;
+}
+
+.profile-image-column {
+  padding-right: 2em;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+table, tr, td {
+  font-size: 1em;
+}
+
 @media (max-width: 600px) {
   body {
     padding: 2em;
   }
 
   .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     grid-template-areas:
       "left"
       "right";
