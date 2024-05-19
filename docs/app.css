@@ -46,6 +46,11 @@ body {
   grid-template-areas: "left middle right";
 }
 
+.ariton-logo {
+  width: 75%;
+  height: auto;
+}
+
 .right {
   padding-top: 8em;
 }
