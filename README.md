@@ -5,7 +5,7 @@ Discover, create, and join communities that match your interests and passions.
 Ariton is a (future) superapp that lets you create and join communities of any kind, 
 based on your hobbies, ideas, philosophy, faith or anything else. 
 
-![Ariton logo](/assets/ariton-logo.png)
+![Ariton logo](/docs/assets/ariton-logo.png)
 
 Built on free and open standards, Ariton gives you the power and ownership of 
 your own identities and data.
@@ -51,9 +51,9 @@ Without the advances in open standards on decentralized identifiers, Ariton woul
 
 |   | About us |
 | --- | --- |
-| ![Sondre Bjellås](assets/sondre.png) | **Sondre Bjellås** (Chief Product Engineer) - With more than three decades of experience with software development, he has extensive experience with technology, languages, patterns and practices, both in building large scalable systems, web apps and decentralized software. His relentless focus on rapid release cycles allows Ariton to develop and adopt to its users and market without delays.  |
-| ![Dan Gershony](assets/dan.png) | **Dan Gershony** (Chief Technology Officer) - With experience from blockchains and former CTO role in a large British player in the blockchain space, Dan brings insight and capabilities to the Ariton team that will ensure success and quality of delivery.|
-| ![Milad Raeisi](assets/milad.png) | **Milad Raeisi** (Software Engineer) - He is a seasoned Software Architect and Programmer with over 20 years of experience. As a Senior Developer, he specializes in software development, UI/UX design, data science, AI, and blockchain. His expertise in building large-scale systems and decentralized applications drives innovation and quality at Ariton.|
+| ![Sondre Bjellås](docs/assets/sondre.png) | **Sondre Bjellås** (Chief Product Engineer) - With more than three decades of experience with software development, he has extensive experience with technology, languages, patterns and practices, both in building large scalable systems, web apps and decentralized software. His relentless focus on rapid release cycles allows Ariton to develop and adopt to its users and market without delays.  |
+| ![Dan Gershony](docs/assets/dan.png) | **Dan Gershony** (Chief Technology Officer) - With experience from blockchains and former CTO role in a large British player in the blockchain space, Dan brings insight and capabilities to the Ariton team that will ensure success and quality of delivery.|
+| ![Milad Raeisi](docs/assets/milad.png) | **Milad Raeisi** (Software Engineer) - He is a seasoned Software Architect and Programmer with over 20 years of experience. As a Senior Developer, he specializes in software development, UI/UX design, data science, AI, and blockchain. His expertise in building large-scale systems and decentralized applications drives innovation and quality at Ariton.|
 
 
 ## Features
