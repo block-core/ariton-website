@@ -18,6 +18,21 @@ body {
   font-style: normal;
 }
 
+a {
+  color: white;
+  text-decoration: underline;
+
+}
+
+a:hover {
+  text-decoration: none;
+
+}
+
+a:visited {
+  color: silver;
+}
+
 .container {
   background-image: url("assets/levi-guzman-zdSoe8za6Hs-unsplash.jpg");
   background-repeat: no-repeat;
