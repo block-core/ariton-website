@@ -48,6 +48,12 @@ label {
   padding-bottom: 0.4em;
 }
 
+form {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1em;
+  border: 1px solid gray;
+}
+
 .container {
   background-image: url("assets/levi-guzman-zdSoe8za6Hs-unsplash.jpg");
   background-repeat: no-repeat;
