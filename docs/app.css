@@ -1,3 +1,20 @@
+:root {
+  --background-color: black;
+  --text-color: white;
+  --link-color: white;
+  --link-visited-color: silver;
+  --form-bg-color: rgba(255, 255, 255, 0.2);
+  --form-border-color: gray;
+  --input-border-color: white;
+  --primary-color: #714B67;
+  --gray-color: #8F8F8F;
+  --secondary-color: #017E84;
+  --learning-color: #E46E78;
+  --ready-color: #21B799;
+  --silver-color: #5B899E;
+  --gold-color: #E4A900;
+}
+
 html,
 body {
   margin: 0;
@@ -5,41 +22,62 @@ body {
 }
 
 body {
-  background-color: black;
+  background-color: var(--background-color);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-  color: white;
+  color: var(--text-color);
   font-size: 18px;
-
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 a {
-  color: white;
+  color: var(--link-color);
   text-decoration: underline;
-
 }
 
 a:hover {
   text-decoration: none;
-
 }
 
 a:visited {
-  color: silver;
+  color: var(--link-visited-color);
 }
 
-input, textarea {
-  border: 2px solid white;
+input,
+textarea {
+  border: 2px solid var(--input-border-color);
   background: none;
   padding: 0.6em;
-  color: white;
+  color: var(--text-color);
   box-sizing: border-box;
   width: 100%;
+}
+
+input {
+  border-radius: 4px;
+}
+
+textarea {
+  border-radius: 4px;
+  height: 100px;
+  resize: vertical;
+}
+
+button {
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 0.8em 1.5em;
+  color: var(--text-color);
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: var(--primary-color);
 }
 
 label {
@@ -49,9 +87,10 @@ label {
 }
 
 form {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--form-bg-color);
   padding: 1em;
-  border: 1px solid gray;
+  border: 1px solid var(--form-border-color);
+  border-radius: 8px;
 }
 
 .container {
@@ -62,7 +101,6 @@ form {
   padding: 4em;
 }
 
-
 .content {
   padding: 4em;
 }
@@ -72,6 +110,7 @@ form {
   font-weight: 400;
   font-style: normal;
   font-size: 2.5em;
+  color: var(--secondary-color);
 }
 
 .logo {
@@ -79,6 +118,7 @@ form {
   font-weight: 400;
   font-style: normal;
   font-size: 5em;
+  color: var(--text-color);
 }
 
 .slogan {
@@ -87,6 +127,7 @@ form {
   font-weight: 200;
   font-style: normal;
   font-size: 2.5em;
+  color: var(--text-color);
 }
 
 .container {
@@ -121,22 +162,19 @@ table {
   border-spacing: 10px;
 }
 
-table, tr, td {
+table,
+tr,
+td {
   font-size: 1em;
 }
 
 @media (max-width: 600px) {
-  body {
-    
-  }
-
   .content {
     padding: 2em;
   }
 
   .container {
-  padding: 2em;
-
+    padding: 2em;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
@@ -163,4 +201,40 @@ table, tr, td {
 
 footer {
   display: none;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.title {
+  color: var(--primary-color);
+}
+
+.subtitle {
+  color: var(--secondary-color);
+}
+
+.section-title {
+  color: var(--secondary-color);
+  font-size: 1.5em;
+  margin-top: 2em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+button:disabled {
+  background-color: var(--gray-color);
+  cursor: not-allowed;
 }
