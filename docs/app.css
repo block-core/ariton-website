@@ -33,6 +33,21 @@ a:visited {
   color: silver;
 }
 
+input, textarea {
+  border: 2px solid white;
+  background: none;
+  padding: 0.6em;
+  color: white;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+  padding-top: 1em;
+  padding-bottom: 0.4em;
+}
+
 .container {
   background-image: url("assets/levi-guzman-zdSoe8za6Hs-unsplash.jpg");
   background-repeat: no-repeat;
