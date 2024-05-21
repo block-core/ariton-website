@@ -159,18 +159,22 @@ Ariton is seeking investements and funding to continue the development of the ne
 If you are interested in funding Ariton, please fill out this form and we will get back to you as soon as possible.
 </p>
 
-<form>
+
+<form 
+  method="POST" 
+  action="https://script.google.com/macros/s/AKfycbzMwKjd1Bdrk8PAVXhuJi_EnuZnAipQG7Mgy9XLGfuj3i9N7O3-7sugqET2CkK89V_Q/exec"
+>
   
 <h2>Register your interest:</h2>
 
-  <label>Invest in Ariton</label>
-  <input type="text" placeholder="Your name">
-  <label>Email</label>
-  <input type="email" placeholder="Your email">
+<label>Your Email</label>
+<input name="Email" type="email" placeholder="Your email" required>
+  <label>Your name</label>
+  <input name="Name" type="text" placeholder="Your name" required>
   <label>Investment amount</label>
-  <input type="number" placeholder="How much you want to invest in $?">
-  <label>Message</label>
-  <textarea placeholder="Your message"></textarea>
+  <input name="Sum" type="number" placeholder="How much you want to invest in $?">
+  <label>Comments or feedback</label>
+  <textarea name="Comment" placeholder="Your message"></textarea>
 <br>
   <input type="submit" value="Submit">
 </form>
@@ -183,3 +187,6 @@ If you are interested in funding Ariton, please fill out this form and we will g
     <script src="app.js"></script>
   </body>
 </html>
+
+
+
