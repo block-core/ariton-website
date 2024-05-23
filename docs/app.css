@@ -1,13 +1,14 @@
 :root {
   --background-color: white;
   --foreground-color: black;
-
   --text-color: black;
   --link-color: black;
   --link-visited-color: gray;
-  --form-bg-color: rgba(255, 255, 255, 0.2);
+  --form-bg-color: rgba(255, 255, 255, 0.8);
   --form-border-color: gray;
-  --input-border-color: white;
+  --input-border-color: #ccc;
+  --input-focus-border-color: #714B67;
+  --input-bg-color: #f9f9f9;
   --primary-color: #714B67;
   --gray-color: #8F8F8F;
   --secondary-color: #f67b00;
@@ -15,12 +16,14 @@
   --ready-color: #9c4e0e;
   --silver-color: #f2620f;
   --gold-color: #E4A900;
+  --transition-duration: 0.3s;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -51,21 +54,20 @@ a:visited {
 input,
 textarea {
   border: 2px solid var(--input-border-color);
-  background: none;
-  padding: 0.6em;
+  background-color: var(--input-bg-color);
+  padding: 0.8em;
   color: var(--text-color);
   box-sizing: border-box;
   width: 100%;
+  border-radius: 4px;
+  transition: border-color var(--transition-duration), box-shadow var(--transition-duration);
 }
 
-input {
-  border-radius: 4px;
-}
-
-textarea {
-  border-radius: 4px;
-  height: 100px;
-  resize: vertical;
+input:focus,
+textarea:focus {
+  border-color: var(--input-focus-border-color);
+  box-shadow: 0 0 8px rgba(113, 75, 103, 0.3);
+  outline: none;
 }
 
 button {
@@ -76,10 +78,12 @@ button {
   font-size: 1em;
   cursor: pointer;
   border-radius: 4px;
+  transition: background-color var(--transition-duration), transform var(--transition-duration);
 }
 
 button:hover {
   background-color: var(--primary-color);
+  transform: scale(1.05);
 }
 
 label {
@@ -93,24 +97,31 @@ form {
   padding: 1em;
   border: 1px solid var(--form-border-color);
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .menu {
   display: flex;
-  align-items: baseline;
-  align-content: center;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
+  width: calc(100%);  
   height: 80px;
+  padding: 0 20px;  
   background-color: var(--foreground-color);
   color: var(--background-color);
-  width: 100%;
   z-index: 1000;
-  overflow: hidden;
+  transition: background-color var(--transition-duration);
+  box-sizing: border-box;  
+}
+
+.menu.scrolled {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .main {
-margin-top: 80px;
+  margin-top: 80px;
 }
 
 #about, #features, #team, #invest {
@@ -122,20 +133,25 @@ margin-top: 80px;
   font-weight: 400;
   font-style: normal;
   font-size: 1.4em;
-  flex-grow: 1;
-  align-self: center;
-  padding-left: 1em;
 }
 
 .menu-items {
-  flex-grow: 2;
-  align-self: center;
+  display: flex;
+  gap: 1em;
 }
 
-.menu-button {
-  flex-grow: 1;
-  align-self: center;
+.menu-button a {
+  background-color: var(--secondary-color);
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  color: var(--background-color);
+  text-decoration: none;
+  transition: background-color var(--transition-duration), transform var(--transition-duration);
+}
 
+.menu-button a:hover {
+  background-color: var(--primary-color);
+  transform: scale(1.05);
 }
 
 .menu a {
@@ -235,20 +251,23 @@ td {
 
 @media (max-width: 600px) {
   .content {
-    padding: 2em;
+      padding: 2em;
   }
 
   .container {
-    padding: 2em;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "left"
-      "right";
+      padding: 2em;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+          "left"
+          "right";
   }
 
   .right {
-    padding-top: 0;
+      padding-top: 0;
+  }
+  .menu-items {
+     gap: 0 !important;
   }
 }
 
