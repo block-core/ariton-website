@@ -1,8 +1,10 @@
 :root {
-  --background-color: black;
-  --text-color: white;
-  --link-color: white;
-  --link-visited-color: silver;
+  --background-color: white;
+  --foreground-color: black;
+
+  --text-color: black;
+  --link-color: black;
+  --link-visited-color: gray;
   --form-bg-color: rgba(255, 255, 255, 0.2);
   --form-border-color: gray;
   --input-border-color: white;
@@ -93,12 +95,52 @@ form {
   border-radius: 8px;
 }
 
+.menu {
+  display: flex;
+  align-items: baseline;
+  align-content: center;
+  position: fixed;
+  top: 0;
+  height: 64px;
+  background-color: var(--foreground-color);
+  color: var(--background-color);
+  width: 100%;
+  z-index: 1000;
+}
+
+.menu-logo {
+  flex-grow: 1;
+  align-self: center;
+}
+
+.menu-items {
+  flex-grow: 2;
+  align-self: center;
+}
+
+.menu-button {
+  flex-grow: 1;
+  align-self: center;
+
+}
+
+.menu a {
+  color: var(--background-color);
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
 .container {
   background-image: url("assets/levi-guzman-zdSoe8za6Hs-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 4em;
+  margin-top: 64px;
 }
 
 .content {
