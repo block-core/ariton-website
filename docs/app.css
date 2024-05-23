@@ -24,6 +24,7 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
@@ -36,6 +37,7 @@ body {
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
+  overflow-y: scroll; /* Ensure vertical scrolling is enabled */
 }
 
 a {
@@ -61,7 +63,7 @@ textarea {
   width: 100%;
   border-radius: 4px;
   transition: border-color var(--transition-duration),
-    box-shadow var(--transition-duration);
+      box-shadow var(--transition-duration);
 }
 
 input:focus,
@@ -80,7 +82,7 @@ button {
   cursor: pointer;
   border-radius: 4px;
   transition: background-color var(--transition-duration),
-    transform var(--transition-duration);
+      transform var(--transition-duration);
 }
 
 button:hover {
@@ -123,7 +125,7 @@ form {
 }
 
 .main {
-  margin-top: 60px;
+  margin-top: 65px;
 }
 
 #about,
@@ -152,7 +154,7 @@ form {
   color: var(--background-color);
   text-decoration: none;
   transition: background-color var(--transition-duration),
-    transform var (--transition-duration);
+      transform var (--transition-duration);
 }
 
 .menu-button a:hover {
@@ -257,54 +259,54 @@ td {
 
 @media (max-width: 600px) {
   .content {
-    padding: 2em;
+      padding: 2em;
   }
 
   .container {
-    padding: 2em;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "left"
-      "right";
+      padding: 2em;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+          "left"
+          "right";
   }
 
   .right {
-    padding-top: 0;
+      padding-top: 0;
   }
 
   .menu-items {
-    gap: 0;
+      gap: 0;
   }
 
   .menu-logo {
-    font-size: 1.2em;
+      font-size: 1.2em;
   }
 
   .menu a {
-    font-size: 0.8em;
-    padding: 0.3em 0.6em;
+      font-size: 0.8em;
+      padding: 0.3em 0.6em;
   }
 
   .menu-button a {
-    font-size: 0.8em;
-    padding: 0.4em 0.8em;
+      font-size: 0.8em;
+      padding: 0.4em 0.8em;
   }
 
   .slogan {
-    font-size: 2em;
+      font-size: 2em;
   }
 
   .logo {
-    font-size: 3.5em;
+      font-size: 3.5em;
   }
 
   .slogan2 {
-    font-size: 2em;
+      font-size: 2em;
   }
 
   body {
-    font-size: 16px;
+      font-size: 16px;
   }
 }
 
@@ -356,6 +358,23 @@ footer {
 }
 
 button:disabled {
-  background-color: var (--gray-color);
+  background-color: var(--gray-color);
   cursor: not-allowed;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(113, 75, 103, 0.7);
+  transition: background-color 0.3s;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-color);
 }
