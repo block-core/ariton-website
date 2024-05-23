@@ -7,15 +7,15 @@
   --form-bg-color: rgba(255, 255, 255, 0.8);
   --form-border-color: gray;
   --input-border-color: #ccc;
-  --input-focus-border-color: #714B67;
+  --input-focus-border-color: #714b67;
   --input-bg-color: #f9f9f9;
-  --primary-color: #714B67;
-  --gray-color: #8F8F8F;
+  --primary-color: #714b67;
+  --gray-color: #8f8f8f;
   --secondary-color: #f67b00;
-  --learning-color: #E46E78;
+  --learning-color: #e46e78;
   --ready-color: #9c4e0e;
   --silver-color: #f2620f;
-  --gold-color: #E4A900;
+  --gold-color: #e4a900;
   --transition-duration: 0.3s;
 }
 
@@ -60,7 +60,8 @@ textarea {
   box-sizing: border-box;
   width: 100%;
   border-radius: 4px;
-  transition: border-color var(--transition-duration), box-shadow var(--transition-duration);
+  transition: border-color var(--transition-duration),
+    box-shadow var(--transition-duration);
 }
 
 input:focus,
@@ -78,7 +79,8 @@ button {
   font-size: 1em;
   cursor: pointer;
   border-radius: 4px;
-  transition: background-color var(--transition-duration), transform var(--transition-duration);
+  transition: background-color var(--transition-duration),
+    transform var(--transition-duration);
 }
 
 button:hover {
@@ -106,14 +108,14 @@ form {
   justify-content: space-between;
   position: fixed;
   top: 0;
-  width: calc(100%);  
-  height: 80px;
-  padding: 0 20px;  
+  width: 100%;
+  height: 65px;
+  padding: 0 20px;
   background-color: var(--foreground-color);
   color: var(--background-color);
   z-index: 1000;
   transition: background-color var(--transition-duration);
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 .menu.scrolled {
@@ -121,10 +123,13 @@ form {
 }
 
 .main {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
-#about, #features, #team, #invest {
+#about,
+#features,
+#team,
+#invest {
   padding-top: 100px;
 }
 
@@ -146,7 +151,8 @@ form {
   border-radius: 4px;
   color: var(--background-color);
   text-decoration: none;
-  transition: background-color var(--transition-duration), transform var(--transition-duration);
+  transition: background-color var(--transition-duration),
+    transform var (--transition-duration);
 }
 
 .menu-button a:hover {
@@ -251,23 +257,54 @@ td {
 
 @media (max-width: 600px) {
   .content {
-      padding: 2em;
+    padding: 2em;
   }
 
   .container {
-      padding: 2em;
-      grid-template-columns: auto;
-      grid-template-rows: auto;
-      grid-template-areas:
-          "left"
-          "right";
+    padding: 2em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "left"
+      "right";
   }
 
   .right {
-      padding-top: 0;
+    padding-top: 0;
   }
+
   .menu-items {
-     gap: 0 !important;
+    gap: 0;
+  }
+
+  .menu-logo {
+    font-size: 1.2em;
+  }
+
+  .menu a {
+    font-size: 0.8em;
+    padding: 0.3em 0.6em;
+  }
+
+  .menu-button a {
+    font-size: 0.8em;
+    padding: 0.4em 0.8em;
+  }
+
+  .slogan {
+    font-size: 2em;
+  }
+
+  .logo {
+    font-size: 3.5em;
+  }
+
+  .slogan2 {
+    font-size: 2em;
+  }
+
+  body {
+    font-size: 16px;
   }
 }
 
@@ -319,6 +356,6 @@ footer {
 }
 
 button:disabled {
-  background-color: var(--gray-color);
+  background-color: var (--gray-color);
   cursor: not-allowed;
 }
