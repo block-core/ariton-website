@@ -101,16 +101,25 @@ form {
   align-content: center;
   position: fixed;
   top: 0;
-  height: 64px;
+  height: 80px;
   background-color: var(--foreground-color);
   color: var(--background-color);
   width: 100%;
   z-index: 1000;
 }
 
+#about, #features, #team, #invest {
+  padding-top: 100px;
+}
+
 .menu-logo {
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4em;
   flex-grow: 1;
   align-self: center;
+  padding-left: 1em;
 }
 
 .menu-items {
@@ -141,6 +150,15 @@ form {
   background-position: center;
   padding: 4em;
   margin-top: 64px;
+  color: var(--background-color);
+}
+
+.top-bg {
+  background-image: url("assets/top-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scaleX(-1);
+  height: 200px;
 }
 
 .content {
@@ -152,7 +170,7 @@ form {
   font-weight: 400;
   font-style: normal;
   font-size: 2.5em;
-  color: var(--secondary-color);
+  color: var(--background-color);
 }
 
 .logo {
@@ -160,7 +178,7 @@ form {
   font-weight: 400;
   font-style: normal;
   font-size: 5em;
-  color: var(--text-color);
+  color: var(--background-color);
 }
 
 .slogan {
@@ -169,7 +187,7 @@ form {
   font-weight: 200;
   font-style: normal;
   font-size: 2.5em;
-  color: var(--text-color);
+  color: var(--background-color);
 }
 
 .container {
