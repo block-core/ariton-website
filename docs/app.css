@@ -132,6 +132,14 @@ h3 {
   display: block;
 }
 
+.feature {
+  border-radius: 15px;
+  border: 1px solid silver;
+  padding: 0.6em;
+  clear: both;
+  margin-bottom: 1em;
+}
+
 #about,
 #features,
 #team,
@@ -181,7 +189,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 4em;
+  padding: 2em;
   margin-top: 64px;
   color: var(--background-color);
 }
@@ -281,7 +289,7 @@ td {
   }
 
   .container {
-      padding: 2em;
+      padding: 1em;
       grid-template-columns: auto;
       grid-template-rows: auto;
       grid-template-areas:
