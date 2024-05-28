@@ -128,7 +128,9 @@ form {
   margin-top: 65px;
 }
 
-
+h3 {
+  display: block;
+}
 
 #about,
 #features,
@@ -194,6 +196,7 @@ form {
 
 .content {
   padding: 4em;
+  max-width: 960px;
 }
 
 .slogan2 {
