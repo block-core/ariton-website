@@ -42,9 +42,9 @@ body {
   overflow-y: overlay;
 }
 
-input,
+button, input,
 textarea {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -143,8 +143,8 @@ main {
   font-size: 1.4em;
 }
 
-h3 {
-  display: block;
+h2, h3 {
+  font-weight: 900;
 }
 
 .feature {
@@ -243,8 +243,7 @@ h3 {
 
 .slogan2 {
   font-family: "Poetsen One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 200;
   font-size: 2.5em;
   color: var(--background-color);
 }
@@ -457,10 +456,6 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .slogan {
-    font-size: 2em;
-  }
-
-  .slogan2 {
     font-size: 2em;
   }
 

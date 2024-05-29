@@ -1,4 +1,4 @@
-# Ariton - The SuperApp for Communities
+# Ariton - SuperApp for Communities
 
 Discover, create, and join communities that match your interests and passions.
 
