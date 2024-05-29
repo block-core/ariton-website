@@ -27,23 +27,23 @@ body {
 }
 
 body {
+  color: var(--text-color);
   background-color: var(--background-color);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: var(--text-color);
   font-size: 18px;
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   scroll-behavior: smooth;
-
   scrollbar-gutter: stable overlay;
   overflow-y: overlay;
 }
 
-input, textarea {
+input,
+textarea {
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -72,7 +72,7 @@ textarea {
   width: 100%;
   border-radius: 6px 6px 0px 6px;
   transition: border-color var(--transition-duration),
-      box-shadow var(--transition-duration);
+    box-shadow var(--transition-duration);
 }
 
 input:focus,
@@ -91,7 +91,7 @@ button {
   cursor: pointer;
   border-radius: 9px 9px 0px 9px;
   transition: background-color var(--transition-duration),
-      transform var(--transition-duration);
+    transform var(--transition-duration);
 }
 
 button:hover {
@@ -177,10 +177,8 @@ h3 {
 }
 
 .menu-logo {
-  font-family: "Freeman", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.4em;
+  width: 56px;
+  height: 56px;
 }
 
 .menu-items {
@@ -195,7 +193,7 @@ h3 {
   color: var(--background-color);
   text-decoration: none;
   transition: background-color var(--transition-duration),
-      transform var (--transition-duration);
+    transform var (--transition-duration);
 }
 
 .menu-button a:hover {
@@ -206,7 +204,6 @@ h3 {
 .menu a {
   color: var(--background-color);
   text-decoration: none;
-  padding: 0.5em 1em;
 }
 
 .menu a:hover {
@@ -273,11 +270,14 @@ h3 {
 
 .ariton-icon {
   align-self: center;
-  max-height: 48px;
+  height: 100%;
+  max-height: 100%;
 }
 
 .ariton-logo {
   max-height: 256px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .ariton-logo-footer {
@@ -320,77 +320,6 @@ td {
 
 .flex-odd {
   flex-direction: row-reverse;
-}
-
-
-@media (max-width: 600px) {
-  .flex {
-    flex-direction: column;
-  }
-
-  .profile-image-column {
-    padding-right: 0.4em;
-  }
-
-  .flex-odd {
-    flex-direction: column;
-  }
-  
-  .feature {
-    padding: 0.6em;
-  }
-
-  .illustration {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .content {
-  }
-
-  .container {
-      padding: 1em;
-      grid-template-columns: auto;
-      grid-template-rows: auto;
-      grid-template-areas:
-          "left"
-          "right";
-  }
-
-  .right {
-      padding-top: 0;
-  }
-
-  .menu-items {
-      gap: 0;
-  }
-
-  .menu-logo {
-      font-size: 1.2em;
-  }
-
-  .menu a {
-      font-size: 0.8em;
-      padding: 0.3em 0.6em;
-  }
-
-  .menu-button a {
-      font-size: 0.8em;
-      padding: 0.4em 0.8em;
-  }
-
-  .slogan {
-      font-size: 2em;
-  }
-
-
-  .slogan2 {
-      font-size: 2em;
-  }
-
-  body {
-      font-size: 16px;
-  }
 }
 
 .left {
@@ -461,4 +390,68 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-thumb:hover {
   background-color: var(--primary-color);
+}
+
+@media (max-width: 600px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .profile-image-column {
+    padding-right: 0.4em;
+  }
+
+  .flex-odd {
+    flex-direction: column;
+  }
+
+  .feature {
+    padding: 0.6em;
+  }
+
+  .illustration {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .content {}
+
+  .container {
+    padding: 1em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "left"
+      "right";
+  }
+
+  .right {
+    padding-top: 0;
+  }
+
+  .menu-items {
+    
+  }
+
+  .menu-logo a {
+  }
+  .menu-items2 a {
+    padding: 0.3em 0.6em;
+  }
+
+  .menu-button2 a {
+    padding: 0.4em 0.8em;
+  }
+
+  .slogan {
+    font-size: 2em;
+  }
+
+  .slogan2 {
+    font-size: 2em;
+  }
+
+  body {
+    font-size: 16px;
+  }
 }
