@@ -5,7 +5,7 @@ Discover, create, and join communities that match your interests and passions.
 Ariton is a (future) superapp that lets you create and join communities of any kind, 
 based on your hobbies, ideas, philosophy, faith or anything else. 
 
-![Ariton logo](/docs/assets/ariton-logo.svg)
+![Ariton logo](/docs/assets/ariton-icon-dark.svg)
 
 Built on free and open standards, Ariton gives you the power and ownership of 
 your own identities and data.

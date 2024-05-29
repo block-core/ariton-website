@@ -83,10 +83,10 @@ textarea:focus {
 }
 
 button {
+  color: var(--background-color);
   background-color: var(--secondary-color);
   border: none;
   padding: 0.8em 1.5em;
-  color: var(--text-color);
   font-size: 1em;
   cursor: pointer;
   border-radius: 9px 9px 0px 9px;
