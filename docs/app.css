@@ -328,6 +328,10 @@ td {
     flex-direction: column;
   }
 
+  .profile-image-column {
+    padding-right: 0.4em;
+  }
+
   .flex-odd {
     flex-direction: column;
   }
