@@ -34,10 +34,17 @@ body {
   background-position: center;
   color: var(--text-color);
   font-size: 18px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   overflow-y: scroll; /* Ensure vertical scrolling is enabled */
+}
+
+input, textarea {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 a {
@@ -61,7 +68,7 @@ textarea {
   color: var(--text-color);
   box-sizing: border-box;
   width: 100%;
-  border-radius: 4px;
+  border-radius: 6px 6px 0px 6px;
   transition: border-color var(--transition-duration),
       box-shadow var(--transition-duration);
 }
@@ -80,7 +87,7 @@ button {
   color: var(--text-color);
   font-size: 1em;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 9px 9px 0px 9px;
   transition: background-color var(--transition-duration),
       transform var(--transition-duration);
 }
@@ -100,7 +107,7 @@ form {
   background-color: var(--form-bg-color);
   padding: 1em;
   border: 1px solid var(--form-border-color);
-  border-radius: 8px;
+  border-radius: 9px 9px 0px 9px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -134,7 +141,7 @@ h3 {
 
 .feature {
   border-radius: 9px 9px 0px 9px;
-  border: 1px solid silver;
+  border: 1px solid rgb(226, 226, 226);
   padding: 0.6em;
   clear: both;
   margin-bottom: 1em;
@@ -177,7 +184,7 @@ h3 {
 .menu-button a {
   background-color: var(--secondary-color);
   padding: 0.5em 1em;
-  border-radius: 4px;
+  border-radius: 9px 9px 0px 9px;
   color: var(--background-color);
   text-decoration: none;
   transition: background-color var(--transition-duration),
@@ -225,7 +232,7 @@ h3 {
 }
 
 .content {
-  max-width: 960px;
+  max-width: 720px;
 }
 
 .slogan2 {
@@ -412,7 +419,7 @@ button:disabled {
 }
 
 body::-webkit-scrollbar {
-  width: 8px;
+  width: 12px;
 }
 
 body::-webkit-scrollbar-track {
@@ -422,6 +429,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: rgba(113, 75, 103, 0.7);
   transition: background-color 0.3s;
+  border-radius: 6px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
