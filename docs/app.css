@@ -133,7 +133,7 @@ h3 {
 }
 
 .feature {
-  border-radius: 15px;
+  border-radius: 9px 9px 0px 9px;
   border: 1px solid silver;
   padding: 0.6em;
   clear: both;
@@ -147,10 +147,12 @@ h3 {
 
 .flex-img {
   flex-grow: 1;
+  align-self: center;
 }
 
 .flex-text {
   flex-grow: 2;
+  align-self: center;
 }
 
 #about,
@@ -215,8 +217,14 @@ h3 {
   height: 100px;
 }
 
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
 .content {
-  padding: 4em;
   max-width: 960px;
 }
 
@@ -289,15 +297,18 @@ td {
 }
 
 @media (max-width: 600px) {
+  .flex {
+    display: flex;
+    gap: 0.4em;
+    flex-direction: column;
+  }
+  
   .illustration {
-    float: unset;
     width: 100%;
     max-width: 100%;
-    display: block;
   }
 
   .content {
-      padding: 2em;
   }
 
   .container {
