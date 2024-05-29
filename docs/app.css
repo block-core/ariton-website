@@ -299,7 +299,7 @@ td {
 @media (max-width: 600px) {
   .flex {
     display: flex;
-    gap: 0.4em;
+    gap: 1em;
     flex-direction: column;
   }
   
