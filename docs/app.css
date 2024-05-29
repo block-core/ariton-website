@@ -140,6 +140,19 @@ h3 {
   margin-bottom: 1em;
 }
 
+.flex {
+  display: flex;
+  gap: 0.4em;
+}
+
+.flex-img {
+  flex-grow: 1;
+}
+
+.flex-text {
+  flex-grow: 2;
+}
+
 #about,
 #features,
 #team,
@@ -272,7 +285,6 @@ td {
 
 
 .illustration {
-  float: left;
   max-width: 256px;
 }
 
