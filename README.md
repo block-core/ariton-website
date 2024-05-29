@@ -23,7 +23,7 @@ Check out the website: https://ariton.app
 
 ## Design Guidelines
 
-Our official design guidelines for website, marketing and app (UX) is made by Daniel Kyle:
+Our official design guidelines for website, marketing and app (UX) is made by [Daniel Kyle](https://github.com/Danielogenna):
 [Figma file](https://www.figma.com/design/gR9iJwS79tfOqlzkDcCR9X/Ariton?node-id=0-1&t=kbYlzyj78vEoMwqY-1)
 
 ## Technologies and Protocols
