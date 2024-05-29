@@ -297,6 +297,7 @@ h3 {
 .profile-image {
   min-width: 64px;
   width: 100%;
+  border-radius: 50%;
 }
 
 .profile-image-column {
