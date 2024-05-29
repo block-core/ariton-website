@@ -39,8 +39,8 @@ body {
   font-style: normal;
   scroll-behavior: smooth;
 
-  overflow-y: scroll; /* Ensure vertical scrolling is enabled */
   scrollbar-gutter: stable overlay;
+  overflow-y: overlay;
 }
 
 input, textarea {
