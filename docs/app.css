@@ -132,6 +132,7 @@ form {
 
 .menu.scrolled {
   background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
 }
 
 .main {
@@ -392,7 +393,18 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: var(--primary-color);
 }
 
+@media (max-width: 400px) {
+  .small-hidden {
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
+
+  main {
+    font-size: 1.2em;
+  }
+
   .flex {
     flex-direction: column;
   }
