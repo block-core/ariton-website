@@ -214,6 +214,7 @@ h3 {
 }
 
 .container {
+  background-color: black;
   background-image: url("assets/levi-guzman-zdSoe8za6Hs-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -317,9 +318,17 @@ td {
   max-width: 256px;
 }
 
+.flex-odd {
+  flex-direction: row-reverse;
+}
+
 
 @media (max-width: 600px) {
   .flex {
+    flex-direction: column;
+  }
+
+  .flex-odd {
     flex-direction: column;
   }
   
