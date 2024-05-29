@@ -23,7 +23,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
   height: 100%;
 }
 
@@ -38,7 +37,10 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  scroll-behavior: smooth;
+
   overflow-y: scroll; /* Ensure vertical scrolling is enabled */
+  scrollbar-gutter: stable overlay;
 }
 
 input, textarea {
@@ -134,6 +136,10 @@ form {
 
 .main {
   margin-top: 65px;
+}
+
+main {
+  font-size: 1.4em;
 }
 
 h3 {
