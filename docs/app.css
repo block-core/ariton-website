@@ -205,6 +205,7 @@ h3 {
 .content {
   padding: 4em;
   max-width: 960px;
+  margin: auto;
 }
 
 .slogan2 {
