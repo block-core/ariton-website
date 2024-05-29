@@ -143,12 +143,24 @@ main {
   font-size: 1.4em;
 }
 
-h2, h3 {
+h1, h2, h3 {
   font-family: "Dosis", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 2.5em;
   font-weight: 800;
+  margin: 0.2em 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
 }
 
 .feature {
@@ -340,7 +352,27 @@ td {
 }
 
 footer {
-  display: none;
+  color: var(--background-color);
+  background-color:rgba(0, 0, 0, 0.7);
+  display: flex;
+  gap: 2em;
+  height: 150px;
+  padding: 2em;
+  align-items: center;
+}
+
+footer a {
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--background-color);
+  text-decoration: underline;
+}
+
+footer > * {
+  flex-grow: 1;
 }
 
 .is-hidden {
@@ -362,8 +394,7 @@ footer {
 
 .section-title {
   color: var(--secondary-color);
-  font-size: 1.5em;
-  margin-top: 2em;
+  margin-top: 1.4em;
 }
 
 .text-center {
