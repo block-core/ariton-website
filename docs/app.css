@@ -359,6 +359,7 @@ footer {
   height: 150px;
   padding: 2em;
   align-items: center;
+  justify-content: center;
 }
 
 footer a {
@@ -373,6 +374,10 @@ footer a:hover {
 
 footer > * {
   flex-grow: 1;
+}
+
+.flex-right {
+  justify-content: flex-end;
 }
 
 .is-hidden {
@@ -435,6 +440,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width: 600px) {
+
+  .ariton-logo {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
 
   main {
     font-size: 1.2em;
