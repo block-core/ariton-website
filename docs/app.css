@@ -288,6 +288,7 @@ h3 {
 
 .ariton-logo {
   max-height: 256px;
+  max-width: 320px;
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -336,7 +337,7 @@ td {
 }
 
 .left {
-  grid-area: left;
+  grid-area: right;
 }
 
 .middle {
@@ -344,7 +345,7 @@ td {
 }
 
 .right {
-  grid-area: right;
+  grid-area: left;
 }
 
 footer {
@@ -474,8 +475,8 @@ body::-webkit-scrollbar-thumb:hover {
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
-      "left"
-      "right";
+      "right"
+      "left";
   }
 
   .right {
