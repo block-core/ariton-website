@@ -229,10 +229,6 @@ h3 {
 
 .container {
   background-color: black;
-  background-image: url("assets/levi-guzman-zdSoe8za6Hs-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   padding: 2em;
   margin-top: 64px;
   color: var(--background-color);

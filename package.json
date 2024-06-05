@@ -1,0 +1,17 @@
+{
+  "name": "ariton-website",
+  "version": "1.0.0",
+  "description": "Discover, create, and join communities that match your interests and passions.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "http-server ./docs -p 8888"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

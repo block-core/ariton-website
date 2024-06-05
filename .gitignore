@@ -1,2 +1,4 @@
 .DS_store
 .env
+node_modules
+package-lock.json
