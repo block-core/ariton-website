@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.addEventListener('scroll', () => {
         const menu = document.querySelector('.menu');
-        if (window.scrollY > 50) {
+        if (window.scrollY > 64) {
             menu.classList.add('scrolled');
         } else {
             menu.classList.remove('scrolled');
