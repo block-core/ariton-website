@@ -227,12 +227,6 @@ h3 {
   text-decoration: underline;
 }
 
-.container {
-  background-color: black;
-  padding: 2em;
-  margin-top: 64px;
-  color: var(--background-color);
-}
 
 .top-bg {
   background-image: url("assets/top-bg.png");
@@ -271,13 +265,45 @@ h3 {
   color: var(--background-color);
 }
 
-.container {
+/* .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
   gap: 50px 50px;
   grid-auto-flow: row;
   grid-template-areas: "left right";
+} */
+
+.container {
+
+
+  /* justify-items: center;
+  padding: 1em;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "right"
+    "left"; */
+}
+
+.container {
+  display: flex;
+  gap: 1em;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: black;
+  padding: 2em;
+  color: var(--background-color);
+}
+
+.left {
+  max-width: 420px;
+}
+
+.right {
+  max-width: 420px;
 }
 
 .ariton-icon {
@@ -300,10 +326,6 @@ h3 {
 .centered {
   text-align: center;
 
-}
-
-.right {
-  padding-top: 8em;
 }
 
 .profile-image {
@@ -336,17 +358,6 @@ td {
   flex-direction: row-reverse;
 }
 
-.left {
-  grid-area: right;
-}
-
-.middle {
-  grid-area: middle;
-}
-
-.right {
-  grid-area: left;
-}
 
 footer {
   color: var(--background-color);
@@ -438,6 +449,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (max-width: 600px) {
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--background-color);
+  }
+
   .ariton-logo {
     padding-left: 3em;
     padding-right: 3em;
@@ -469,19 +487,6 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .content {}
-
-  .container {
-    padding: 1em;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "right"
-      "left";
-  }
-
-  .right {
-    padding-top: 0;
-  }
 
   .menu-items {
     
