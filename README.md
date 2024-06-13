@@ -42,13 +42,3 @@ locations.
 ```
 
 Your Ariton identities is your own, it is not linked or connected to your existing birthname or identity used in real life. You can be yourself, how you want to be.
-
-## Funding
-
-Ariton is seeking investements and funding to continue the development of the new superapp. Behind the project is individuals who have a track record of delivering, wealth of knowledge and experience with software and app development.
-
-### ARI Token
-
-The initial funding for Ariton will be run using multiple funding platforms, including Angor, which is a new decentralized funding platform for Bitcoin.
-
-Investors into Ariton will receive ARI Token, which will be ownership in the decentralized company behind Ariton. The company behind Ariton is not incorporated in any national state, it is a registered company within the Ariton app on the Ariton Community.
