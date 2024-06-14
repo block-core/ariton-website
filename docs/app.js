@@ -5,13 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const successMessage = document.querySelector('.js-success-message');
     const errorMessage = document.querySelector('.js-error-message');
 
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        showLoadingIndicator();
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => showSuccessMessage(response))
-            .catch(error => showErrorMessage(error));
-    });
+    if (form) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            showLoadingIndicator();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => showSuccessMessage(response))
+                .catch(error => showErrorMessage(error));
+        });
+    }
 
     function showLoadingIndicator() {
         submitting.classList.remove('is-hidden');
