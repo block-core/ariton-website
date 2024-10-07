@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ariton - SuperApp for Communities</title>
-    <meta name="description"
-      content="Ariton is a decentralized platform for building and managing communities, offering tools for communication, marketplace, and more." />
-    <meta name="keywords" content="Ariton, communities, decentralized, superapp, blockchain, AI" />
+    <meta
+      name="description"
+      content="Ariton is a decentralized platform for building and managing communities, offering tools for communication, marketplace, and more."
+    />
+    <meta
+      name="keywords"
+      content="Ariton, communities, decentralized, superapp, blockchain, AI"
+    />
     <meta name="robots" content="index, follow" />
-    <link rel="icon" type="image/png" href="assets/ariton-favicon.png">
+    <link rel="icon" type="image/png" href="assets/ariton-favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,15 +22,24 @@
     />
     <!-- <link rel="stylesheet" type="text/css" href="app.css" /> -->
     <meta property="og:title" content="Ariton" />
-    <meta property="og:description" content="Freedom to Connect, Power to Own" />
-    <meta property="og:image" content="https://ariton.app/assets/ariton-social.png" />
+    <meta
+      property="og:description"
+      content="Freedom to Connect, Power to Own"
+    />
+    <meta
+      property="og:image"
+      content="https://ariton.app/assets/ariton-social.png"
+    />
     <meta property="og:image:width" content="1280" />
     <meta property="og:image:height" content="640" />
     <meta property="og:type" content="object" />
     <meta property="og:url" content="https://ariton.app" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Ariton - SuperApp for Communities" />
-    <meta name="twitter:image" content="https://ariton.app/assets/ariton-social-x.png" />
+    <meta
+      name="twitter:image"
+      content="https://ariton.app/assets/ariton-social-x.png"
+    />
 
     <style>
       :root {
@@ -54,8 +68,14 @@
         --button-text-color: rgb(23, 23, 23);
       }
 
+      html,
       body {
+        width: 100%;
         margin: 0;
+        padding: 0;
+      }
+
+      body {
         background-color: var(--background-color);
         color: var(--text-color);
 
@@ -302,7 +322,8 @@
         color: var(--section-text-color);
       }
 
-      #learn, #features {
+      #learn,
+      #features {
         scroll-margin-top: 100px;
       }
 
@@ -383,6 +404,36 @@
         .hide-small {
           display: none;
         }
+
+        /* header {
+          padding: 7px 10px;
+        }
+
+        main {
+          padding: 5px;
+        }
+
+        h1 {
+          font-size: 1.4em;
+        } */
+      }
+
+      @media only screen and (max-width: 400px) {
+        .hide-tiny {
+          display: none;
+        }
+
+        header {
+          padding: 7px 10px;
+        }
+
+        main {
+          padding: 5px;
+        }
+
+        h1 {
+          font-size: 4em;
+        }
       }
     </style>
   </head>
@@ -395,7 +446,7 @@
               <a href="#top">
                 <div class="ariton-logo-container">
                   <div class="ariton-logo" alt="Ariton logo"></div>
-                  <div class="ariton-text" alt="Ariton logo"></div>
+                  <div class="ariton-text hide-tiny" alt="Ariton logo"></div>
                 </div>
               </a>
             </li>
@@ -404,7 +455,11 @@
             <li class="hide-small"><a href="#features">Features</a></li>
             <li><a href="funding.html">Funding</a></li>
             <li>
-              <a href="#"  onclick="event.preventDefault();" class="theme-toggle">
+              <a
+                href="#"
+                onclick="event.preventDefault();"
+                class="theme-toggle"
+              >
                 <svg width="30" height="30" id="light-icon">
                   <circle cx="15" cy="15" r="6" fill="currentColor" />
 
@@ -452,9 +507,7 @@
 
         <div>
           <a href="https://alpha.ariton.app"><button>Open Ariton</button></a>
-          <a href="#learn"
-            ><button class="light-button">Learn more</button></a
-          >
+          <a href="#learn"><button class="light-button">Learn more</button></a>
         </div>
       </div>
       <section class="section-left" id="learn">
@@ -567,7 +620,6 @@
           </div>
         </div>
       </section>
-
     </main>
 
     <footer>
