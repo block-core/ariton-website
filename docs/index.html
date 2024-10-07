@@ -348,6 +348,10 @@
       }
 
       @media only screen and (max-width: 600px) {
+        body {
+          font-size: 14px;
+        }
+
         section > div {
           width: 100%;
         }
@@ -374,6 +378,10 @@
           border-radius: 6px;
           flex-direction: row;
         }
+
+        .hide-small {
+          display: none;
+        }
       }
     </style>
   </head>
@@ -391,8 +399,8 @@
               </a>
             </li>
 
-            <li><a href="#learn">Learn more</a></li>
-            <li><a href="#features">Features</a></li>
+            <li class="hide-small"><a href="#learn">Learn more</a></li>
+            <li class="hide-small"><a href="#features">Features</a></li>
             <li><a href="funding.html">Funding</a></li>
             <li>
               <a href="#"  onclick="event.preventDefault();" class="theme-toggle">
