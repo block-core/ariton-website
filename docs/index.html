@@ -312,6 +312,10 @@
         }
       }
 
+      .warn {
+        color: #c23667;
+      }
+
       section,
       .section-left,
       .section-right {
@@ -320,10 +324,12 @@
         flex-wrap: wrap;
         background-color: var(--section-background-color);
         color: var(--section-text-color);
+        width: 100%;
       }
 
       #learn,
-      #features {
+      #features, 
+      #pricing {
         scroll-margin-top: 100px;
       }
 
@@ -346,12 +352,13 @@
       }
 
       .section-image {
-        width: 50%;
-        height: 300px;
-        background-size: cover;
-        background-position: center;
-        border-radius: 6px;
-      }
+              width: 50%;
+              height: 300px;
+              background-size: 80%;
+              background-repeat: no-repeat;
+              background-position: center;
+              border-radius: 6px;
+            }
 
       .dark-theme-only {
         display: none;
@@ -367,6 +374,19 @@
 
       body.light-theme .light-theme-only {
         display: block;
+      }
+
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
 
       @media only screen and (max-width: 600px) {
@@ -443,7 +463,7 @@
         <nav>
           <ul>
             <li>
-              <a href="/">
+              <a href="#top">
                 <div class="ariton-logo-container">
                   <div class="ariton-logo" alt="Ariton logo"></div>
                   <div class="ariton-text" alt="Ariton logo"></div>
@@ -453,7 +473,7 @@
 
             <li class="hide-small"><a href="#learn">Learn more</a></li>
             <li class="hide-small"><a href="#features">Features</a></li>
-            <li class="hide-tiny"><a href="funding.html">Funding</a></li>
+            <li class="hide-tiny"><a href="#pricing">Pricing</a></li>
             <li>
               <a
                 href="#"
@@ -501,8 +521,8 @@
       <div class="hero">
         <h1>Rediscover the Web.</h1>
         <p class="larger">
-          Unleash the full potential for your Community. Build your communities
-          and projects on Ariton.
+          Unleash the full potential for <strong>Your Community</strong>. Build your <strong>Communities</strong>
+          and <strong>Projects</strong> on Ariton.
         </p>
 
         <div>
@@ -513,18 +533,18 @@
       <section class="section-left" id="learn">
         <div
           class="section-image"
-          style="
-            background-image: url('https://raw.githubusercontent.com/block-core/ariton/refs/heads/main/app/public/icons/ariton-screenshot-01.png');
-          "
+          style="background-image: url('assets/community.png')"
         ></div>
         <div>
           <div class="section-text">
             <h2>Communities that you love</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              dolores magnam nostrum quisquam, veniam repellat reprehenderit
-              illum maxime in porro nam. Blanditiis placeat ab perspiciatis
-              quibusdam possimus facilis, excepturi similique?
+              Discover, join or create communities that you love. Ariton is a
+              decentralized platform for building and managing communities.
+            </p>
+            <p>
+              Different communities have different needs, and Ariton is flexible
+              and adopts to your individual needs.
             </p>
           </div>
         </div>
@@ -533,26 +553,24 @@
       <section class="section-right">
         <div
           class="section-image"
-          style="
-            background-image: url('https://raw.githubusercontent.com/block-core/ariton/refs/heads/main/app/public/icons/ariton-screenshot-01.png');
-          "
+          style="background-image: url('assets/feature-mobile-first.png')"
         ></div>
         <div>
           <div class="section-text">
             <h2>Always accessible</h2>
             <p>
-              Ariton runs on any device, from your desktop to your mobile phone. It also works offline, so you can always access your data. Guess what? It automatically syncs data between all your devices.
+              Ariton runs on any device, from your desktop to your mobile phone.
+              It also works offline, so you can always access your data. Guess
+              what? It automatically syncs data between all your devices.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="section-left" id="features">
+      <section class="section-left">
         <div
           class="section-image"
-          style="
-            background-image: url('https://raw.githubusercontent.com/block-core/ariton/refs/heads/main/app/public/icons/ariton-screenshot-01.png');
-          "
+          style="background-image: url('assets/feature-data.png')"
         ></div>
         <div>
           <div class="section-text">
@@ -569,15 +587,206 @@
       <section class="section-right">
         <div
           class="section-image"
-          style="
-            background-image: url('https://raw.githubusercontent.com/block-core/ariton/refs/heads/main/app/public/icons/ariton-screenshot-01.png');
-          "
+          style="background-image: url('assets/feature-superapp.png')"
         ></div>
         <div>
           <div class="section-text">
-            <h2>Apps</h2>
+            <h2>Super App</h2>
             <p>
-              You can discover and add apps to your Ariton experience. From Chat, Notes, Tasks, Events, and more, you can customize your experience to fit your needs.
+              Ariton is a Super App. You can discover and add mini-apps to your
+              Ariton experience. From Chat, Notes, Tasks, Events, and more, you
+              can customize your experience to fit your needs.
+            </p>
+            <p>
+              A community can tailor which mini-apps are accessible for its
+              members.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <h1 id="features">Features</h1>
+
+      <section class="section-left">
+        <div>
+          <div class="section-text">
+            <p>
+              Ariton is under continuous development and new features and
+              improvements is added daily.
+            </p>
+            <p>
+              <strong>PREVIEW RELEASE</strong>: Ariton is currently in preview
+              (prototype) stage, and is not yet feature complete. There are
+              plenty of bugs and features that does not work as expected.
+            </p>
+            <p>
+              <strong class="warn"
+                >Data will be deleted and reset frequently.</strong
+              >
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="section-text centered">
+            <h2>Got it? Ariton is in preview release</h2>
+            <p>Things will break. Data will be lost. You've been warned.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-right">
+        <div
+          class="section-image"
+          style="background-image: url('assets/feature-miniapps.png')"
+        ></div>
+        <div>
+          <div class="section-text">
+            <h2>Mini Apps</h2>
+            <p>We already got a good list of mini apps available within Ariton. New mini apps are added frequently, and 
+              in the future, you can make your own mini apps.
+            </p>
+            </p>
+            <p>
+              Some apps already available: Profile, Friends, Chat, Files, Notes, Tasks, Text, Apps, Player,
+              Marketplace, Events.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-left">
+        <div
+          class="section-image"
+          style="background-image: url('assets/feature-ai.png')"
+        ></div>
+        <div>
+          <div class="section-text">
+            <h2>Artificial Intelligence</h2>
+            <p>AI will play an important role in Ariton, from helping users create content that is aligned with their communities and positive in tone, helping to build and curate great communities.
+            </p>
+            <p>
+              Ariton builds on the Web Neural Network API (WebNN), which is an open standard that allows models to run safely within the web browser. Ariton will utilize locally run SLMs (Small Language Models) that run on your device, keeping your privacy intact.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-right">
+        <div
+          class="section-image"
+          style="background-image: url('assets/feature-verification.png')"
+        ></div>
+        <div>
+          <div class="section-text">
+            <h2>Badges, Verifications, Reputation</h2>
+            <p>
+              You can earn badges and verifications within Ariton. Badges are created by communities and given to the members that have achieved something. 
+            </p>
+            <p>
+              Verifications are given by service providers that verify that you are who you say you are. These verification services can issue identity cards to users.
+            </p>
+            <p>
+              Reputations are important in the digital world, as a means to filter out noise and problematic actors. Within a community on Ariton, individuals will build up reputations connected to their identifiers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-left">
+        <div
+          class="section-image"
+        >
+      
+        <div class="video-container">
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/gbXRosdrEzg?si=o4UA7vhuK7I2yvqN"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      
+      </div>
+        <div>
+          <div class="section-text">
+            <h2>Video demonstration</h2>
+            <p>Watch the walkthrough video that shows how Ariton works.</p>
+          </div>
+        </div>
+      </section>
+
+      <h1 id="pricing">Pricing</h1>
+
+      <section class="section-left">
+        <div>
+          <div class="section-text">
+            <h2>Community Host</h2>
+            <h3>
+              $200/month
+            </h3>
+            <p>
+              As the host of a community, you can earn revenue by having members join your community.
+            </p>
+            <p>
+              The payment for membership is shared with the host of community and Ariton. The host of a community will receive 70% of the membership fee, and Ariton will receive 30%.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="section-text">
+            <h2>We are working on the details...</h2>
+            <p>
+              Ariton is currently in preview release, and is free to test and use. We are working on a pricing model that will be fair and transparent.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-left">
+        <div>
+          <div class="section-text">
+            <h2>Community Membership</h2>
+            <h3>$1/month (or higher)</h3>
+            <p>
+              Most of your payment to a community, goes to the host of the community. This ensures your host will be serious about the community and its members.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="section-text centered">
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="section-left">
+        <div>
+          <div class="section-text">
+            <h2>Storage</h2>
+            <p>
+              You can increase your storage capacity when you need it.
+            </p>
+            <p>
+              <h3>Entry (1 GB): Free</h3>
+              <h3>
+              Basic (10 GB): $8/month</h3>
+              <h3>Standard (50 GB): $16/month</h3>
+              <h3>Premium (100 GB): $30/month</h3>
+              </h3>
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="section-text">
+            <h2>Got it? Ariton is in preview release</h2>
+            <p>Things will break. Data will be lost. You've been warned.</p>
+            <p>
+              <strong class="warn"
+                >Data will be deleted and reset frequently.</strong
+              >
             </p>
           </div>
         </div>
