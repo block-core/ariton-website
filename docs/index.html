@@ -83,6 +83,7 @@
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
+        font-size: 18px;
 
         transition: background-color 0.4s, color 0.4s;
         display: flex;
@@ -95,6 +96,7 @@
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
+        font-size: 18px;
       }
 
       a {
@@ -325,6 +327,7 @@
         background-color: var(--section-background-color);
         color: var(--section-text-color);
         width: 100%;
+        align-items: center;
       }
 
       #learn,
@@ -352,13 +355,22 @@
       }
 
       .section-image {
+        padding: 2em;
+        box-sizing: border-box;
               width: 50%;
-              height: 300px;
-              background-size: 80%;
-              background-repeat: no-repeat;
-              background-position: center;
+              /* height: 300px; */
+              /* background-size: 80%; */
+              /* background-repeat: no-repeat; */
+              /* background-position: center; */
               border-radius: 6px;
             }
+
+      .section-img {
+        width: 100%; 
+        /* overflow-clip-margin: content-box; 
+        overflow: clip; 
+        aspect-ratio: auto 871 / 857; */
+      }
 
       .dark-theme-only {
         display: none;
@@ -531,10 +543,12 @@
         </div>
       </div>
       <section class="section-left" id="learn">
-        <div
-          class="section-image"
-          style="background-image: url('assets/community.png')"
-        ></div>
+    
+
+        <div class="section-image">
+          <img src="assets/community.png" loading="lazy" decoding="async" class="section-img">
+          </div>
+
         <div>
           <div class="section-text">
             <h2>Communities that you love</h2>
@@ -551,10 +565,10 @@
       </section>
 
       <section class="section-right">
-        <div
-          class="section-image"
-          style="background-image: url('assets/feature-mobile-first.png')"
-        ></div>
+     
+        <div class="section-image">
+          <img src="assets/feature-mobile-first.png" loading="lazy" decoding="async" class="section-img">
+          </div>
         <div>
           <div class="section-text">
             <h2>Always accessible</h2>
@@ -568,10 +582,10 @@
       </section>
 
       <section class="section-left">
-        <div
-          class="section-image"
-          style="background-image: url('assets/feature-data.png')"
-        ></div>
+        <div class="section-image">
+          <img src="assets/feature-data.png" loading="lazy" decoding="async" class="section-img">
+          </div>
+      
         <div>
           <div class="section-text">
             <h2>You Own Your Data</h2>
@@ -585,10 +599,14 @@
       </section>
 
       <section class="section-right">
-        <div
+        <div class="section-image">
+        <img src="assets/feature-superapp.png" loading="lazy" decoding="async" class="section-img">
+        </div>
+        <!-- <div
           class="section-image"
           style="background-image: url('assets/feature-superapp.png')"
-        ></div>
+        >
+      </div> -->
         <div>
           <div class="section-text">
             <h2>Super App</h2>
@@ -635,10 +653,9 @@
       </section>
 
       <section class="section-right">
-        <div
-          class="section-image"
-          style="background-image: url('assets/feature-miniapps.png')"
-        ></div>
+        <div class="section-image">
+          <img src="assets/feature-miniapps.png" loading="lazy" decoding="async" class="section-img">
+          </div>
         <div>
           <div class="section-text">
             <h2>Mini Apps</h2>
@@ -655,10 +672,10 @@
       </section>
 
       <section class="section-left">
-        <div
-          class="section-image"
-          style="background-image: url('assets/feature-ai.png')"
-        ></div>
+        
+        <div class="section-image">
+          <img src="assets/feature-ai.png" loading="lazy" decoding="async" class="section-img">
+          </div>
         <div>
           <div class="section-text">
             <h2>Artificial Intelligence</h2>
@@ -672,10 +689,10 @@
       </section>
 
       <section class="section-right">
-        <div
-          class="section-image"
-          style="background-image: url('assets/feature-verification.png')"
-        ></div>
+      
+        <div class="section-image">
+          <img src="assets/feature-verification.png" loading="lazy" decoding="async" class="section-img">
+          </div>
         <div>
           <div class="section-text">
             <h2>Badges, Verifications, Reputation</h2>
