@@ -48,10 +48,12 @@
         --logo-image: url("assets/ariton-icon-dark-stripped.svg");
         --logo-text: url("assets/ariton-text-dark.svg");
         --header-border: rgb(229, 229, 229);
+
         --section-background-color: rgb(245, 245, 245);
         --section-text-color: rgb(75, 85, 99);
 
         --button-background-color: rgb(23, 23, 23);
+        --button-background-hover: rgb(41, 41, 41);
         --button-text-color: rgb(250, 250, 250);
       }
 
@@ -63,8 +65,8 @@
         --header-border: rgb(38, 38, 38);
         --section-background-color: rgb(23, 23, 23);
         --section-text-color: rgb(250, 250, 250);
-
         --button-background-color: rgb(250, 250, 250);
+        --button-background-hover: rgb(199, 199, 199);
         --button-text-color: rgb(23, 23, 23);
       }
 
@@ -106,6 +108,28 @@
 
       a:hover {
         text-decoration: underline;
+      }
+
+      a.menu-link:hover {
+        text-decoration: none;
+      }
+
+      a.menu-link::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        display: block;
+        margin-top: 5px;
+        right: 0;
+        background: currentColor;
+        transition: width 0.3s ease;
+        -webkit-transition: width 0.3s ease;
+      }
+
+      a.menu-link:hover::after {
+        width: 100%;
+        left: 0;
+        background: currentColor;
       }
 
       .hero {
@@ -171,6 +195,12 @@
         cursor: pointer;
       }
 
+      button:hover {
+        /* color: var(--text-color); */
+        background-color: var(--button-background-hover);
+        transition: background-color 0.4s;
+      }
+
       .light-button {
         color: var(--text-color);
         background-color: transparent;
@@ -179,6 +209,7 @@
       .light-button:hover {
         color: var(--text-color);
         background-color: var(--header-border);
+        transition: background-color 0.8s;
       }
 
       .download-container button {
@@ -483,9 +514,9 @@
               </a>
             </li>
 
-            <li class="hide-small"><a href="#learn">Learn more</a></li>
-            <li class="hide-small"><a href="#features">Features</a></li>
-            <li class="hide-tiny"><a href="#pricing">Pricing</a></li>
+            <li class="hide-small"><a class="menu-link" href="#learn">Learn more</a></li>
+            <li class="hide-small"><a class="menu-link" href="#features">Features</a></li>
+            <li class="hide-tiny"><a class="menu-link" href="#pricing">Pricing</a></li>
             <li>
               <a
                 href="#"
