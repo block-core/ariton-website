@@ -62,10 +62,8 @@
         --colorAnimation75: #f57c00;
         --colorAnimation100: #d32f2f;
 
-        --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        --box-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.2);
-
-
+        --box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        --box-shadow-hover: 0 12px 24px rgba(0, 0, 0, 0.4);
       }
 
       [data-theme="dark"] {
@@ -86,8 +84,8 @@
         --colorAnimation75: #ffab40;
         --colorAnimation100: #ff5252;
 
-        --box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-        --box-shadow-hover: 0 8px 16px rgba(255, 255, 255, 0.2);
+        --box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+        --box-shadow-hover: 0 12px 24px rgba(255, 255, 255, 0.4);
       }
 
       html,
@@ -152,6 +150,18 @@
         background: currentColor;
       }
 
+      @keyframes pulsate {
+        0% {
+          box-shadow: var(--box-shadow);
+        }
+        50% {
+          box-shadow: var(--box-shadow-hover);
+        }
+        100% {
+          box-shadow: var(--box-shadow);
+        }
+      }
+
       .hero-container {
         display: flex;
         gap: 2em;
@@ -189,6 +199,7 @@
         flex-direction: column;
         margin-bottom: 80px;
         color: var(--section-text-color);
+        
       }
 
       .larger {
@@ -488,13 +499,14 @@
         width: 100%;
         border-radius: 4px;
         transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) rotate(-4deg);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increased drop shadow */
+        box-shadow: var(--box-shadow);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* animation: pulsate 6s infinite; */
       }
       
       .hero-screenshot:hover {
         transform: perspective(1000px) rotateX(5deg) rotateY(-5deg) rotate(-1deg) scale(1.7) translateX(-100px);
-        box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4); /* Increased drop shadow on hover */
+        box-shadow: var(--box-shadow-hover)
       }
 
       .screenshot-light {}
