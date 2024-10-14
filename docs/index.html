@@ -61,6 +61,11 @@
         --colorAnimation50: #388e3c;
         --colorAnimation75: #f57c00;
         --colorAnimation100: #d32f2f;
+
+        --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        --box-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+
       }
 
       [data-theme="dark"] {
@@ -80,6 +85,9 @@
         --colorAnimation50: #69f0ae;
         --colorAnimation75: #ffab40;
         --colorAnimation100: #ff5252;
+
+        --box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+        --box-shadow-hover: 0 8px 16px rgba(255, 255, 255, 0.2);
       }
 
       html,
@@ -142,6 +150,19 @@
         width: 100%;
         left: 0;
         background: currentColor;
+      }
+
+      .hero-container {
+        display: flex;
+        gap: 2em;
+      }
+
+      .hero-container > *:first-child {
+        flex: 6;
+      }
+
+      .hero-container > *:last-child {
+        flex: 4;
       }
 
       .hero {
@@ -331,9 +352,18 @@
       h1 {
         font-size: 5em;
         margin-bottom: 50px;
-        animation: colorChange 5s infinite;
+        /* animation: colorChange 5s infinite; */
         font-weight: 600;
       }
+      
+      .headline {
+          display: inline-block;
+          background: radial-gradient(circle at top left, #0a9ff2 0%, #6964f9 18.82%, #d950fb 32.6%, #f159c6 52.83%, #ff5091 68.03%, #ff6659 87.66%, #ff8a20 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+      }
+
 
       .h1-section {
         font-size: 4em;
@@ -347,25 +377,6 @@
       h2 {
         font-weight: 500;
       }
-
-      @keyframes colorChange {
-        0% {
-          color: var(--colorAnimation0); 
-        }
-        25% {
-          color: var(--colorAnimation25);
-        }
-        50% {
-          color: var(--colorAnimation50); 
-        }
-        75% {
-          color: var(--colorAnimation75); 
-        }
-        100% {
-          color: var(--colorAnimation100); 
-        }
-      }
-
 
       .warn {
         color: #c23667;
@@ -456,6 +467,44 @@
 
       .bitcoin-tip {
         margin-bottom: 0.2em;
+      }
+
+      .hero-screenshot {
+        width: 100%;
+        border-radius: 4px;
+        transform: skew(0deg) rotate(-4deg);
+        box-shadow: var(--box-shadow);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .hero-screenshot:hover {
+        transform: skew(0deg) rotate(-1deg) scale(1.6);
+        box-shadow: var(--box-shadow-hover);
+      }
+
+      .screenshot-light {}
+
+      .screenshot-dark {
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        .hero-container {
+          font-size: 0.8em;
+        }
+      }
+
+      @media only screen and (max-width: 765px) {
+        .hero-container {
+          flex-direction: column;
+        }
+
+        .hero-screenshot:hover {
+          transform: skew(0deg) rotate(-1deg) scale(1);
+        }
       }
 
       @media only screen and (max-width: 600px) {
@@ -587,16 +636,23 @@
       </div>
     </header>
     <main>
-      <div class="hero">
-        <h1>Rediscover the Web.</h1>
-        <p class="larger">
-          Unleash the full potential for <strong>Your Community</strong>. Build your <strong>Communities</strong>
-          and <strong>Projects</strong> on Ariton.
-        </p>
+      <div class="hero-container">
+        <div class="hero">
+          <h1 class="headline">Rediscover the Web.</h1>
 
-        <div>
-          <a href="https://alpha.ariton.app"><button>Open Ariton</button></a>
-          <a href="#learn"><button class="light-button">Learn more</button></a>
+          <p class="larger">
+            Unleash the full potential for <strong>Your Community</strong>. Build your <strong>Communities</strong>
+            and <strong>Projects</strong> on Ariton.
+          </p>
+
+          <div>
+            <a href="https://alpha.ariton.app"><button>Open Ariton</button></a>
+            <a href="#learn"><button class="light-button">Learn more</button></a>
+          </div>
+        </div>
+        <div class="hero">
+          <img src="assets/screenshot-light.webp" class="hero-screenshot screenshot-light">
+          <img src="assets/screenshot-dark.webp" class="hero-screenshot screenshot-dark hidden">
         </div>
       </div>
       <section class="section-left" id="learn">
@@ -957,6 +1013,9 @@
       const darkIcon = document.getElementById("dark-icon");
 
       const toggleButton = document.querySelector(".theme-toggle");
+      const screenshotLight = document.querySelector(".screenshot-light");
+      const screenshotDark = document.querySelector(".screenshot-dark");
+
       const htmlElement = document.documentElement;
 
       toggleButton.addEventListener("click", () => {
@@ -966,12 +1025,19 @@
 
           lightIcon.setAttribute("display", "inline-block");
           darkIcon.setAttribute("display", "none");
+
+          screenshotLight.classList.remove("hidden");
+          screenshotDark.classList.add("hidden");
+
         } else {
           htmlElement.setAttribute("data-theme", "dark");
           htmlElement.style.setProperty("color-scheme", "dark");
 
           lightIcon.setAttribute("display", "none");
           darkIcon.setAttribute("display", "inline-block");
+
+          screenshotLight.classList.add("hidden");
+          screenshotDark.classList.remove("hidden");
         }
       });
 
