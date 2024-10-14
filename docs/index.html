@@ -155,6 +155,12 @@
       .hero-container {
         display: flex;
         gap: 2em;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        justify-items: center;
+        justify-self: center;
       }
 
       .hero-container > *:first-child {
@@ -163,12 +169,21 @@
 
       .hero-container > *:last-child {
         flex: 4;
+        text-align: center;
       }
 
       .hero {
         text-align: center;
         min-height: 400px;
         height: calc(100vh - 80px - 80px);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 80px;
+        color: var(--section-text-color);
+      }
+
+      .hero-image {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -472,14 +487,14 @@
       .hero-screenshot {
         width: 100%;
         border-radius: 4px;
-        transform: skew(0deg) rotate(-4deg);
-        box-shadow: var(--box-shadow);
+        transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) rotate(-4deg);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increased drop shadow */
         transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
       
       .hero-screenshot:hover {
-        transform: skew(0deg) rotate(-1deg) scale(1.6);
-        box-shadow: var(--box-shadow-hover);
+        transform: perspective(1000px) rotateX(5deg) rotateY(-5deg) rotate(-1deg) scale(1.7) translateX(-100px);
+        box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4); /* Increased drop shadow on hover */
       }
 
       .screenshot-light {}
@@ -494,6 +509,10 @@
       @media only screen and (max-width: 1024px) {
         .hero-container {
           font-size: 0.8em;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          justify-items: center;
         }
       }
 
@@ -502,8 +521,16 @@
           flex-direction: column;
         }
 
+        .hero-screenshot {
+          width: 80%;
+        }
+
         .hero-screenshot:hover {
           transform: skew(0deg) rotate(-1deg) scale(1);
+        }
+
+        .hero-image {
+          display: inline-block;
         }
       }
 
@@ -650,7 +677,7 @@
             <a href="#learn"><button class="light-button">Learn more</button></a>
           </div>
         </div>
-        <div class="hero">
+        <div class="hero-image">
           <img src="assets/screenshot-light.webp" class="hero-screenshot screenshot-light">
           <img src="assets/screenshot-dark.webp" class="hero-screenshot screenshot-dark hidden">
         </div>
